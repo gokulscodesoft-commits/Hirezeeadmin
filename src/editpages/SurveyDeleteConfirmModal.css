@@ -1,0 +1,119 @@
+.survey-delete-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.survey-delete-modal {
+  background: #fff;
+  width: 90%;
+  max-width: 450px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.survey-delete-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.survey-delete-header h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  color: #dc2626;
+}
+
+.survey-delete-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #6b7280;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s ease;
+}
+
+.survey-delete-close:hover {
+  color: #1f2937;
+}
+
+.survey-delete-body {
+  padding: 20px;
+}
+
+.survey-delete-message {
+  font-size: 15px;
+  color: #dc2626;
+  font-weight: 500;
+  margin: 0 0 12px 0;
+}
+
+.survey-delete-question {
+  font-size: 14px;
+  color: #374151;
+  margin: 12px 0;
+  padding: 12px;
+  background: #fef3c7;
+  border-left: 3px solid #f59e0b;
+  border-radius: 4px;
+}
+
+.survey-delete-warning {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 12px 0 0 0;
+}
+
+.survey-delete-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding: 16px 20px;
+  border-top: 1px solid #e5e7eb;
+  background: #f9fafb;
+}
+
+.survey-delete-cancel-btn,
+.survey-delete-confirm-btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.survey-delete-cancel-btn {
+  background: #fff;
+  border: 1px solid #d1d5db;
+  color: #374151;
+}
+
+.survey-delete-cancel-btn:hover {
+  background: #f3f4f6;
+}
+
+.survey-delete-confirm-btn {
+  background: #dc2626;
+  color: #fff;
+}
+
+.survey-delete-confirm-btn:hover {
+  background: #b91c1c;
+}

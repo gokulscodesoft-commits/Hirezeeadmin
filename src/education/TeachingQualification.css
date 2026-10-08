@@ -1,0 +1,185 @@
+/* ====== Section ====== */
+.teachingqualif-rec {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.teachingqualif-section {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.teachingqualif-title {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #444;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.teachingqualif-title-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ====== Add Button ====== */
+.teachingqualif-add-btn {
+  background: #ef6a37;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.teachingqualif-add-btn:hover {
+  background: #d95b28;
+}
+
+/* ====== Category Filter ====== */
+.teachingqualif-filter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 12px 0 18px;
+}
+
+.teachingqualif-filter label {
+  font-size: 14px;
+  color: #444;
+}
+
+.teachingqualif-filter select {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* ====== Table ====== */
+.teachingqualif-table-container {
+  overflow-x: auto;
+  position: relative;
+}
+
+.teachingqualif-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.teachingqualif-table th,
+.teachingqualif-table td {
+  padding: 17px 26px;
+  color: #7c8c9d;
+  text-align: left;
+  border-bottom: 1px solid #eeeeeeca;
+}
+
+.teachingqualif-table th {
+  background: #becbdb19;
+  color: #444;
+  font-weight: 500;
+}
+
+/* ====== Actions ====== */
+.teachingqualif-actions {
+  white-space: nowrap;
+}
+
+/* ====== Action buttons ====== */
+.teachingqualif-btn {
+  padding: 10px 14px;
+  margin: 0 4px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.teachingqualif-btn:hover {
+  transform: translateY(-2px);
+}
+
+.teachingqualif-btn.view-btn {
+  background-color: #e6f0ff;
+  color: #3d6dff;
+  font-size: large;
+}
+
+.teachingqualif-btn.edit-btn {
+  background-color: #ffeee6;
+  color: #e89e2f;
+  font-size: large;
+}
+
+.teachingqualif-btn.delete-btn {
+  background-color: #ffeee6;
+  color: #df4646;
+  font-size: large;
+}
+
+.teachingqualif-btn.view-btn:hover {
+  background-color: #c4ddfe;
+}
+
+.teachingqualif-btn.edit-btn:hover {
+  background-color: #ffe0d1;
+}
+
+.teachingqualif-btn.delete-btn:hover {
+  background-color: #ffd9c8;
+}
+
+/* ====== Hidden Row ====== */
+.hidden-row {
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+}
+
+/* ====== Pagination ====== */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 8px;
+}
+
+.pagination button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  background: #f0f0f0;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.pagination button:hover {
+  background: #ddd;
+}
+
+.pagination button.active {
+  background: #ef6a37;
+  color: white;
+}
+
+.pagination-ellipsis {
+  padding: 0 4px;
+  color: #888;
+  align-self: center;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

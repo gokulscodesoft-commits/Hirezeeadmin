@@ -1,0 +1,179 @@
+.education-container {
+  padding: 20px;
+  background: #f9fafc;
+  min-height: 100vh;
+}
+
+.education-rec {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.education-section {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Title & Header */
+.education-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #444;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.2s ease-in-out;
+}
+
+.education-title:hover {
+  color: #f26422c5;
+}
+
+.title-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.education-add-btn {
+  background: #ef6b37d7;
+  color: #fff;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  height: 37px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.education-add-btn:hover {
+  background: #d95b28;
+}
+
+/* Table */
+.education-table-container {
+  overflow-x: auto;
+}
+
+.education-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.education-table th,
+.education-table td {
+  padding: 14px 20px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.education-table th {
+  background: #becbdb19;
+  font-weight: 500;
+  color: #444;
+}
+
+.education-table td {
+  color: #7c8c9d;
+}
+
+/* Buttons (matching ExperienceFilter + HomeBanner) */
+.education-actions {
+  white-space: nowrap;
+}
+
+.education-btn {
+  padding: 10px 14px;
+  margin: 0 4px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.education-btn:hover {
+  transform: translateY(-2px);
+}
+
+.education-btn.view-btn {
+  background-color: #e6f0ff;
+  color: #3d6dff;
+}
+
+.education-btn.edit-btn {
+  background-color: #ffeee6;
+  color: #e89e2f;
+}
+
+.education-btn.delete-btn {
+  background-color: #ffeee6;
+  color: #df4646;
+}
+
+.education-btn.view-btn:hover {
+  background-color: #c4ddfe;
+}
+
+.education-btn.edit-btn:hover {
+  background-color: #ffe0d1;
+}
+
+.education-btn.delete-btn:hover {
+  background-color: #ffd9c8;
+}
+
+
+.title-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 6px;
+  margin-top: 16px;
+}
+
+.pagination button {
+  border: none;
+  background: #f1f1f1;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: background 0.2s;
+  border-style: none;
+}
+
+.pagination button:hover {
+  background: #ef6b37ae;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pagination button.active {
+  background: #ef6b37d7;
+  color: #fff;
+  border-style: none;
+}
+
+.hidden-row {
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+}

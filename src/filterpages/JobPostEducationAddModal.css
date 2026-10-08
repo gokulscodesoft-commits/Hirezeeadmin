@@ -1,0 +1,96 @@
+.modal-overlay-education {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content-education {
+  background: #fff;
+  width: 480px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.modal-content-education h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  padding: 16px 20px;
+  border-bottom: 1px solid #e5e7eb;
+  color: #1f2937;
+}
+
+.modal-content-education form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content-education input,
+.modal-content-education select {
+  margin: 20px 20px 0;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+}
+
+.modal-content-education input:last-of-type,
+.modal-content-education select:last-of-type {
+  margin-bottom: 20px;
+}
+
+.modal-content-education input:focus,
+.modal-content-education select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+.modal-actions-education {
+  background: #f3f4f6;
+  padding: 14px 20px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.modal-actions-education button {
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.save-btn-education {
+  background: #f97316;
+  color: #fff;
+}
+
+.save-btn-education:hover {
+  background: #ea580c;
+}
+
+.cancel-btn-education {
+  background: #fff;
+  border: 1px solid #d1d5db;
+  color: #374151;
+}
+
+.cancel-btn-education:hover {
+  background: #f9fafb;
+}

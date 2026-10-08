@@ -1,0 +1,148 @@
+.recruiter-school-cell {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.school-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.recruiter-school-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* Plan Badge */
+.plan-badge {
+  display: inline-block;
+  background: #dbeafe;
+  color: #0284c7;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* Days Badge */
+.days-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.days-badge.active {
+  background: #d1fae5;
+  color: #047857;
+}
+
+.days-badge.expiring {
+  background: #fed7aa;
+  color: #b45309;
+}
+
+.days-badge.expired {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+/* Status Badge */
+.status-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.status-badge.active {
+  background: #d1fae5;
+  color: #047857;
+}
+
+.status-badge.expiring {
+  background: #fed7aa;
+  color: #b45309;
+}
+
+.status-badge.expired {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+/* Extend Button */
+.extend-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  background: #ef6b37;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.extend-btn:hover {
+  background: #df5c26;
+  box-shadow: 0 2px 8px rgba(239, 107, 55, 0.2);
+}
+
+.extend-btn:active {
+  transform: scale(0.98);
+}
+
+/* Extended Badge */
+.extended-badge {
+  display: inline-flex;
+  align-items: center;
+  background: #dcfce7;
+  color: #16a34a;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  flex-shrink: 0;
+  animation: slideIn 0.3s ease-out;
+  width: fit-content;
+}
+
+.school-name-with-email {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.school-name {
+  font-weight: 600;
+  color: #1f2937;
+  font-size: 14px;
+}
+
+.school-email-small {
+  font-size: 12px;
+  color: #6b7280;
+  font-weight: 400;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

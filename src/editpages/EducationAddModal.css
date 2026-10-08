@@ -1,0 +1,89 @@
+.education-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.education-modal-content {
+  background: #fff;
+  width: 480px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  overflow: hidden;
+}
+
+.education-modal-content h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  padding: 16px 20px;
+  border-bottom: 1px solid #e5e7eb;
+  color: #1f2937;
+}
+
+.education-modal-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+.education-modal-content input {
+  margin: 20px;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+}
+
+.education-modal-content input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+.education-modal-actions {
+  background: #f3f4f6;
+  padding: 14px 20px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.education-modal-actions button {
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.education-save-btn {
+  background: #f97316;
+  color: #fff;
+}
+
+.education-save-btn:hover {
+  background: #ea580c;
+}
+
+.education-cancel-btn {
+  background: #fff;
+  border: 1px solid #d1d5db;
+  color: #374151;
+}
+
+.education-cancel-btn:hover {
+  background: #f9fafb;
+}

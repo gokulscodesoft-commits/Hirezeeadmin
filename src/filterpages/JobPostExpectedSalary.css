@@ -1,0 +1,174 @@
+.jobpostexpectedsalary-container {
+  padding: 20px;
+  background: #f9fafc;
+  min-height: 100vh;
+}
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.pagination button {
+  padding: 8px 14px;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.pagination button:hover {
+  background: #f4f4f4;
+}
+
+.pagination button.active {
+  background: #ef6a37;
+  color: #fff;
+  border-color: #ef6a37;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pagination-ellipsis {
+  padding: 0 4px;
+  color: #888;
+  align-self: center;
+}
+
+.jobpostexpectedsalary-rec {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.jobpostexpectedsalary-section {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Title & Header */
+.jobpostexpectedsalary-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #444;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.2s ease-in-out;
+}
+
+.jobpostexpectedsalary-title:hover {
+  color: #f26422c5;
+}
+
+.title-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.jobpostexpectedsalary-add-btn {
+  background: #ef6b37d7;
+  color: #fff;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  height: 37px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.jobpostexpectedsalary-add-btn:hover {
+  background: #d95b28;
+}
+
+/* Table */
+.jobpostexpectedsalary-table-container {
+  overflow-x: auto;
+}
+
+.jobpostexpectedsalary-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.jobpostexpectedsalary-table th,
+.jobpostexpectedsalary-table td {
+  padding: 14px 20px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.jobpostexpectedsalary-table th {
+  background: #becbdb19;
+  font-weight: 500;
+  color: #444;
+}
+
+.jobpostexpectedsalary-table td {
+  color: #7c8c9d;
+}
+
+/* Buttons */
+.jobpostexpectedsalary-actions {
+  white-space: nowrap;
+}
+
+.jobpostexpectedsalary-btn {
+  padding: 10px 14px;
+  margin: 0 4px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.jobpostexpectedsalary-btn:hover {
+  transform: translateY(-2px);
+}
+
+.jobpostexpectedsalary-btn.view-btn {
+  background-color: #e6f0ff;
+  color: #3d6dff;
+}
+
+.jobpostexpectedsalary-btn.edit-btn {
+  background-color: #ffeee6;
+  color: #e89e2f;
+}
+
+.jobpostexpectedsalary-btn.delete-btn {
+  background-color: #ffeee6;
+  color: #df4646;
+}
+
+.jobpostexpectedsalary-btn.view-btn:hover {
+  background-color: #c4ddfe;
+}
+
+.jobpostexpectedsalary-btn.edit-btn:hover {
+  background-color: #ffe0d1;
+}
+
+.jobpostexpectedsalary-btn.delete-btn:hover {
+  background-color: #ffd9c8;
+}
+
+.hidden-row {
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+}

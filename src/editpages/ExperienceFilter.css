@@ -1,0 +1,136 @@
+.experiencefilter-container {
+  padding: 20px;
+  background: #f9fafc;
+  min-height: 100vh;
+}
+
+.experiencefilter-rec {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.experiencefilter-section {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Title & Header */
+.experiencefilter-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #444;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.2s ease-in-out;
+}
+
+.experiencefilter-title:hover {
+  color: #f26422c5;
+}
+
+.title-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.experiencefilter-add-btn {
+  background: #ef6b37d7;
+  color: #fff;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  height: 37px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.experiencefilter-add-btn:hover {
+  background: #d95b28;
+}
+
+/* Table */
+.experiencefilter-table-container {
+  overflow-x: auto;
+}
+
+.experiencefilter-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.experiencefilter-table th,
+.experiencefilter-table td {
+  padding: 14px 20px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.experiencefilter-table th {
+  background: #becbdb19;
+  font-weight: 500;
+  color: #444;
+}
+
+.experiencefilter-table td {
+  color: #7c8c9d;
+}
+
+/* Buttons (matching HomeBanner) */
+.experiencefilter-actions {
+  white-space: nowrap;
+}
+
+.experiencefilter-btn {
+  padding: 10px 14px;
+  margin: 0 4px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.experiencefilter-btn:hover {
+  transform: translateY(-2px);
+}
+
+.experiencefilter-btn.view-btn {
+  background-color: #e6f0ff;
+  color: #3d6dff;
+}
+
+.experiencefilter-btn.edit-btn {
+  background-color: #ffeee6;
+  color: #e89e2f;
+}
+
+.experiencefilter-btn.delete-btn {
+  background-color: #ffeee6;
+  color: #df4646;
+}
+
+.experiencefilter-btn.view-btn:hover {
+  background-color: #c4ddfe;
+}
+
+.experiencefilter-btn.edit-btn:hover {
+  background-color: #ffe0d1;
+}
+
+.experiencefilter-btn.delete-btn:hover {
+  background-color: #ffd9c8;
+}
+
+.hidden-row {
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+}

@@ -1,0 +1,324 @@
+.subscriptionaddmodal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.subscriptionaddmodal-content {
+  background: #fff;
+  padding: 15px 40px;
+  border-radius: 8px;
+  width: 600px;
+  max-width: 90vw;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.button-headline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.subscriptionaddmodal-content h3 {
+  margin-bottom: 20px;
+  color: #ef6a37;
+}
+
+.subscriptionaddmodal-content label {
+  display: block;
+  margin: 10px 0 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #475569;
+}
+
+.subscriptionaddmodal-content input,
+.subscriptionaddmodal-content select {
+  width: 95%;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+.subscriptionaddmodal-content input::placeholder {
+  color: #94a3b8;
+}
+
+.subscriptionaddmodal-content textarea::placeholder {
+  color: #94a3b8;
+}
+
+.add-content-btn {
+  margin-bottom: 15px;
+  background: #ef6a37;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+}
+
+.subscriptionaddmodal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.cancel-btn {
+  background: #dcdcdc !important;
+  color: #333;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  /* transition: background 0.2s ease; */
+}
+
+.cancel-btn:hover {
+  background: #a63d3d;
+}
+.save-btn {
+  background: #ef6a37;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.membership-select {
+  width: 95%;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+  margin-bottom: 10px;
+  background-color: #bfbfbf5d;
+  color: #333;
+  font-weight: 500;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.membership-select:focus {
+  border-color: #6f6f6fc7;
+  background-color: #bfbfbf5d;
+  outline: none;
+}
+.content-line {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.content-line input {
+  flex: 1;
+}
+
+.remove-content-btn {
+  background: #ff5f5ff9;
+  color: white;
+  border: none;
+  padding: 4px 6px;
+  border-radius: 25%;
+  cursor: pointer;
+  font-size: 11px;
+  line-height: 1;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.remove-content-btn:hover {
+  background: #fb0000;
+  transform: scale(1.2);
+}
+
+.reset-btn {
+  background: transparent;
+  color: #555;
+  border: 1px solid #ccc;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease-in-out;
+}
+
+.reset-btn:hover {
+  background: #ea3636;
+  border-color: #ea3636;
+  color: #e3e3e3;
+}
+
+.membership-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cancel-membership-btn {
+  background: #ff5f5ff9;
+  color: white;
+  border: none;
+  padding: 4px 6px;
+  border-radius: 25%;
+  cursor: pointer;
+  font-size: 11px;
+  line-height: 1;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.cancel-membership-btn:hover {
+  background: #fb0000;
+  transform: scale(1.2);
+}
+
+/* Subscription Limits Section - Premium Card Style */
+.subscription-limits-section {
+  margin: 24px 0;
+  padding: 20px 24px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.06);
+  position: relative;
+}
+
+.subscription-limits-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #ef6a37 0%, #f59e0b 100%);
+  border-radius: 12px 12px 0 0;
+}
+
+.subscription-limits-title {
+  margin: 0 0 20px 0;
+  padding-bottom: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #1e293b;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.subscription-limits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.subscription-limits-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 4px;
+}
+
+.subscription-limits-field label {
+  margin: 0 0 8px 0;
+  font-size: 13px;
+  font-weight: 500;
+  color: #475569;
+}
+
+.subscription-limits-field input {
+  width: 80%;
+  padding: 10px 12px;
+  margin-bottom: 0;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background-color: #fff;
+  font-size: 14px;
+  color: #1e293b;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.subscription-limits-field input:focus {
+  border-color: #ef6a37;
+  box-shadow: 0 0 0 3px rgba(239, 106, 55, 0.1);
+  outline: none;
+}
+
+.subscription-limits-field input::placeholder {
+  color: #94a3b8;
+}
+
+.subscription-limits-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  grid-column: span 2;
+  margin-top: 8px;
+}
+
+.subscription-limits-checkbox input[type="checkbox"] {
+  width: auto;
+  margin: 0;
+  cursor: pointer;
+}
+
+.subscription-limits-checkbox label {
+  margin: 0;
+  cursor: pointer;
+  user-select: none;
+}
+
+@media (max-width: 500px) {
+  .subscription-limits-section {
+    padding: 16px 18px;
+    margin: 20px 0;
+  }
+
+  .subscription-limits-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .subscription-limits-checkbox {
+    grid-column: span 1;
+  }
+
+  .subscription-limits-title {
+    font-size: 14px;
+  }
+}
+
+/* Subscription Features Textarea */
+.subscription-features-textarea {
+  width: 95%;
+  padding: 12px 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.5;
+  resize: vertical;
+  min-height: 120px;
+  max-height: 250px;
+  overflow-y: auto;
+  transition: border-color 0.2s ease;
+}
+
+.subscription-features-textarea:focus {
+  border-color: #ef6a37;
+  outline: none;
+}
+
+.subscription-features-textarea::placeholder {
+  color: #999;
+  opacity: 1;
+}

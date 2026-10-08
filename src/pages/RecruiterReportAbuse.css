@@ -1,0 +1,131 @@
+.abuse-container {
+  padding: 20px;
+  background: #f4f6f9;
+  min-height: 100vh;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+/* Card */
+.abuse-card {
+  background: white;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.abuse-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Seeker */
+.seeker-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.profile-img {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.seeker-section h3 {
+  margin: 0;
+}
+
+/* Recruiter */
+.recruiter-section {
+  margin-bottom: 15px;
+}
+
+.recruiter-section h4 {
+  margin-bottom: 5px;
+  color: #444;
+}
+
+/* Message */
+.message-section {
+  background: #f9fafc;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.message-section h4 {
+  margin-bottom: 5px;
+}
+
+/* Footer */
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.date {
+  font-size: 13px;
+  color: gray;
+}
+
+.delete-btn {
+  background: #ff4d4f;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #d9363e;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  font-size: 18px;
+}
+
+/*-----------------------------*/
+.seeker-section .abused-name {
+  font-size: 15px;
+  color: gray;
+}
+.seeker-section .abused-email {
+  font-size: 15px;
+  color: gray;
+}
+.seeker-section .abused-number {
+  font-size: 15px;
+  color: gray;
+}
+
+.recruiter-report {
+  color: #d95a2a !important;
+}
+
+.recruiter-section p {
+  color: gray;
+  font-size: 15px;
+}
+
+.delete-btn {
+  background-color: red !important;
+  color: #fff !important;
+  font-weight: 900 !important;
+}

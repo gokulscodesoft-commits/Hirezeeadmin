@@ -1,0 +1,63 @@
+.highestedu-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.highestedu-modal-content {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  width: 400px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+  animation: slideDown 0.3s ease;
+}
+
+.highestedu-modal-content h2 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #444;
+}
+
+.highestedu-modal-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.highestedu-modal-content input {
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.highestedu-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.highestedu-modal-actions .save-btn {
+  background: #ef6a37;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.highestedu-modal-actions .cancel-btn {
+  background: #ddd;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}

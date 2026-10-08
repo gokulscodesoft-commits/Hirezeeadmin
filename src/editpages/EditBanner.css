@@ -1,0 +1,109 @@
+.editbanner-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.editbanner-container h2 {
+  font-size: 15px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.editbanner-preview-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin: 0 auto 20px;
+  gap: 20px;
+}
+
+.editbanner-preview-img {
+  width: 690px;
+  height: 230px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 1px solid #ddd;
+  background: #fafafa;
+  flex-shrink: 0;
+}
+
+.editbanner-controls {
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  margin: 10px;
+ 
+}
+
+.editbanner-upload-btn {
+  background: #ef6b37f1;
+  color: #fff;
+  padding: 7px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  transition: 0.2s;
+}
+.editbanner-upload-btn:hover {
+  background: #d95b2f;
+}
+
+.editbanner-delete-btn {
+  background: #fdd4d4;
+  border-style: none;
+  color: #d9534f;
+  padding: 7px 12px;
+  border-radius: 6px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.editbanner-delete-btn:hover {
+  background: #d9534f;
+  color: #fff;
+}
+
+.editbanner-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.editbanner-cancel {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s;
+}
+.editbanner-cancel:hover {
+  background: #f2f2f2;
+}
+
+.editbanner-save {
+  background: #ef6a37;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s;
+}
+.editbanner-save:hover {
+  background: #d95b2f;
+}

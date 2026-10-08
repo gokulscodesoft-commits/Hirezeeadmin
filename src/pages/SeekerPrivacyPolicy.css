@@ -1,0 +1,114 @@
+.privacy-container {
+  background: white !important;
+  border-radius: 12px !important;
+  padding: 20px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+}
+
+.privacy-container h2 {
+  margin: 0; /* 🔥 remove bottom margin */
+  font-size: 18px;
+  font-weight: 600 !important;
+  color: #222;
+}
+
+.privacy-container .privacy-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.privacy-container .privacy-button .add-btn {
+  /* Add button */
+
+  background: #ef6a37;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  padding: 8px 16px; /* 🔥 proper size */
+ /* 🔥 modern look */
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.add-btn:hover {
+  background: #d85a2d;
+}
+
+.privacy-condition-details {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 50px;
+}
+
+.privacy-section h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 6px;
+}
+
+.privacy-description {
+  font-size: 13px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+.privacy-points {
+  padding-left: 18px;
+}
+
+.privacy-points li {
+  font-size: 13px;
+  color: #555;
+  line-height: 1.6;
+  list-style: disc;
+}
+
+.privacy-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-btn {
+  background: #ff4d4f;
+  border: none;
+  color: white;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #d9363e;
+}
+
+.privacy-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.privacy-actions .edit-btn {
+  background: #ffeee6;
+  border: none;
+  color: #e89e2f;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.privacy-actions .edit-btn:hover {
+  background: #ffe0d1;
+}
+
+.privacy-content {
+  margin-top: 8px;
+  font-size: 13px;
+  color: #555;
+}

@@ -1,0 +1,315 @@
+.recruiter-renewals-container {
+  padding: 24px;
+  background: #f0f4f8;
+  min-height: 100vh;
+}
+
+/* Header */
+.renewals-header {
+  margin-bottom: 32px;
+}
+
+.renewals-header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0 0 8px 0;
+}
+
+.renewals-header .subtitle {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0;
+}
+
+/* Stats Grid */
+.renewals-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.stat-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: all 0.2s ease;
+}
+
+.stat-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.stat-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.stat-card.total .stat-icon {
+  background: #e0e7ff;
+  color: #4f46e5;
+}
+
+.stat-card.active .stat-icon {
+  background: #d1fae5;
+  color: #059669;
+}
+
+.stat-card.expiring .stat-icon {
+  background: #fef3c7;
+  color: #f59e0b;
+}
+
+.stat-card.expired .stat-icon {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.stat-content p {
+  margin: 0;
+  font-size: 13px;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.stat-content h3 {
+  margin: 6px 0 0 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+/* Filters */
+.renewals-filters {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.filter-search {
+  flex: 1;
+  min-width: 250px;
+  padding: 10px 14px;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.filter-search:focus {
+  outline: none;
+  border-color: #ef6b37;
+  box-shadow: 0 0 0 3px rgba(239, 107, 55, 0.1);
+}
+
+.filter-status {
+  padding: 10px 14px;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 14px;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-status:focus {
+  outline: none;
+  border-color: #ef6b37;
+  box-shadow: 0 0 0 3px rgba(239, 107, 55, 0.1);
+}
+
+/* Table */
+.renewals-table-container {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+.renewals-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.renewals-table th {
+  padding: 14px 16px;
+  background: #f9fafb;
+  border-bottom: 2px solid #e5e7eb;
+  font-weight: 600;
+  color: #374151;
+  text-align: left;
+}
+
+.renewals-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #e5e7eb;
+  color: #1f2937;
+}
+
+.renewals-table tbody tr:hover {
+  background: #f9fafb;
+}
+
+.school-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.school-name {
+  font-weight: 500;
+  margin: 0;
+  color: #1f2937;
+}
+
+.school-email {
+  margin: 0;
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+.plan-badge {
+  display: inline-block;
+  background: #dbeafe;
+  color: #0284c7;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.days-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.days-badge.active {
+  background: #d1fae5;
+  color: #047857;
+}
+
+.days-badge.expiring {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.days-badge.expired {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status-badge.active {
+  background: #d1fae5;
+  color: #059669;
+}
+
+.status-badge.expiring {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.status-badge.expired {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.extend-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  background: #ef6b37;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.extend-btn:hover {
+  background: #df5c26;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(239, 107, 55, 0.3);
+}
+
+/* Empty States */
+.no-results {
+  background: #fff;
+  padding: 40px 20px;
+  border-radius: 12px;
+  text-align: center;
+  color: #9ca3af;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.recruiter-renewals-loading,
+.recruiter-renewals-error {
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.recruiter-renewals-error {
+  color: #dc2626;
+}
+
+.recruiter-renewals-loading {
+  color: #7c8c9d;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .recruiter-renewals-container {
+    padding: 16px;
+  }
+
+  .renewals-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .renewals-filters {
+    flex-direction: column;
+  }
+
+  .filter-search {
+    min-width: 100%;
+  }
+
+  .renewals-table {
+    font-size: 12px;
+  }
+
+  .renewals-table th,
+  .renewals-table td {
+    padding: 10px 12px;
+  }
+}

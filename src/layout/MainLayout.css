@@ -1,0 +1,43 @@
+.main-layout {
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  overflow: hidden;
+}
+
+/* Sidebar stays fixed */
+.sidebar {
+  width: 240px;
+  background-color: #1e2a38;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  flex-shrink: 0;
+  z-index: 100;
+}
+
+/* Content shifts right by sidebar width */
+.content {
+  flex: 1;
+  margin-left: 240px;   /* same as sidebar width */
+  display: flex;
+  flex-direction: column;
+  height: 100vh;        /* 👈 stretch full viewport height */
+  background: #ffffff;
+  box-sizing: border-box;
+  overflow: hidden;     /* 👈 no scroll on wrapper */
+  transition: margin-left 0.2s ease;
+}
+
+/* Content shifts less when sidebar is collapsed to icon-only */
+.main-layout.sidebar-collapsed .content {
+  margin-left: 72px;
+}
+
+/* Push the outlet area between header + footer */
+.hero-section {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}

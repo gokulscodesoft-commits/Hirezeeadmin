@@ -1,0 +1,264 @@
+.subscription-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.subscription-top-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.subscription-small-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.subscription-cards-container {
+  display: flex;
+  gap: 20px; /* space between cards */
+}
+
+.subscription-card {
+  flex: 1; /* makes all cards equal width */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: white;
+  height: 80px;
+  width: 240px;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.subscription-card:hover {
+  transform: translateY(-3px);
+}
+
+.subscription-card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.subscription-card-left {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* space between icon and h4 */
+}
+
+.subscription-card-icon {
+  font-size: 30px;
+  background: #fadacb;
+  padding: 10px;
+  border-radius: 8px;
+  color: #ef6a37;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subscription-card-body h4 {
+  font-size: large;
+  font-weight: 400;
+}
+
+.subscription-card-body p {
+  color: #1e2a38b0;
+}
+
+.subscription-currency {
+  font-size: 14.5px;
+  color: #3f3f3f;
+}
+
+.subscription-amount {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1e2a38;
+  margin: 0;
+  padding-left: 2px;
+}
+
+/* Sections */
+.subscription-rec-seek {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.subscription-section {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.subscription-section h2 {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #444;
+}
+
+.subscription-table-container {
+  overflow-x: auto;
+}
+
+.subscription-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+/* .subscription-table th:first-child {
+    width: 40px; 
+    color: #a7caf400;
+  } */
+
+.subscription-table th,
+.subscription-table td {
+  padding: 30px 16px;
+  color: #7c8c9d;
+  text-align: left;
+  border-bottom: 1px solid #eeeeeeca;
+}
+
+.subscription-table th {
+  background: #becbdb19;
+  color: #444;
+  font-weight: 500;
+}
+
+.subscription-table tr:hover {
+  background: #f9f9f9;
+}
+
+.subscription-school-logo {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.subscription-membership {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.subscription-membership.free {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+
+.subscription-membership.basic {
+  background: #f1f1f1;
+  color: #333;
+}
+
+.subscription-membership.advanced {
+  background: #ffe0b2;
+  color: #e65100;
+}
+
+.subscription-membership.premium {
+  background: #fff3e0;
+  color: #ef6c00;
+}
+
+.subscription-membership.enterprise {
+  background: #ede7f6;
+  color: #4527a0;
+}
+
+.subscription-status.seeking {
+  color: green;
+  font-weight: 500;
+}
+
+.subscription-status.not-seeking {
+  color: red;
+  font-weight: 500;
+}
+
+.subscription-actions {
+  white-space: nowrap;
+}
+
+.subscription-btn {
+  padding: 6px 14px;
+  margin: 0 4px;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  border: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.subscription-btn:hover {
+  transform: translateY(-2px);
+}
+
+.subscription-btn.edit-btn {
+  background-color: #ffeee6;
+  border-radius: 7px;
+  font-size: large;
+  color: #e89e2f;
+}
+
+.subscription-btn.edit-btn:hover {
+  background-color: #ffe0d1;
+}
+
+.delete-btn {
+  background-color: #ffeee6;
+  border-radius: 7px;
+  font-size: large;
+  color: #df4646;
+}
+
+.delete-btn:hover {
+  background-color: #ffd9c8;
+}
+
+.subscription-content-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
+  font-size: 14px;
+  color: #444;
+}
+
+.subscription-content-list li {
+  margin-bottom: 4px;
+}
+
+.subscription-add-btn {
+  background-color: #ff6a2fd5; /* main orange color */
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+}
+
+.subscription-add-btn:hover {
+  background-color: #f96b32;
+}
+
+.hidden-row {
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+}

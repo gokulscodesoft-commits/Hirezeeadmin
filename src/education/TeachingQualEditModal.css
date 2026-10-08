@@ -1,0 +1,64 @@
+.teachingqualif-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.teachingqualif-modal-content {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  width: 400px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+  animation: fadeDown 0.3s ease;
+}
+
+.teachingqualif-modal-content h2 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #444;
+}
+
+.teachingqualif-modal-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.teachingqualif-modal-content input,
+.teachingqualif-modal-content select {
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.teachingqualif-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.teachingqualif-modal-actions .save-btn {
+  background: #ef6a37;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.teachingqualif-modal-actions .cancel-btn {
+  background: #ddd;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}

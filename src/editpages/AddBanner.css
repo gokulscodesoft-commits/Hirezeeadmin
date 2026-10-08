@@ -1,0 +1,121 @@
+.addbanner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.addbanner-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+}
+
+.addbanner-title {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #1d1d1d;
+}
+
+.addbanner-upload {
+  margin-bottom: 25px;
+}
+
+.addbanner-dropzone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #bbb;
+  border-radius: 10px;
+  padding: 40px 20px;
+   font-weight: 600;    
+  font-size: 22px; 
+  cursor: pointer;
+  color: #666;
+  transition: border-color 0.3s ease;
+}
+
+.addbanner-dropzone p{
+    font-size: 12px;
+    color: #9e9e9e;
+    font-weight: 300;
+}
+.upload-icon{
+    font-size: 40px;
+    margin-bottom: 30px;
+    color:  #ff7944;  
+}
+
+.upload-warp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* .addbanner-dropzone:hover {
+  border-color: #ef6a37;
+  color: #ef6b3781;
+} */
+
+.browse-text {
+  color:  #ff8555;  
+  font-weight: 900;    
+  font-size: 22px;      
+  cursor: pointer;
+}
+
+.addbanner-dropzone:hover .browse-text {
+  text-decoration: underline;
+  color: #ff5c1c;
+}
+
+.addbanner-input {
+  display: none;
+}
+
+.addbanner-preview {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.addbanner-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.addbanner-cancel {
+  background: #f1f1f1;
+  color: #555;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.addbanner-cancel:hover {
+  background: #e0e0e0;
+}
+
+.addbanner-save {
+  background: #ef6a37;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.addbanner-save:hover {
+  background: #d95b28;
+}

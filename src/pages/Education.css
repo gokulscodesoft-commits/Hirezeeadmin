@@ -1,0 +1,71 @@
+/* ====== Section ====== */
+.education-rec {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.education-section {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.education-title {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #444;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+/* ====== Table ====== */
+.education-table-container {
+  overflow-x: auto;
+}
+
+.education-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.education-table th,
+.education-table td {
+  padding: 17px 26px;
+  color: #7c8c9d;
+  text-align: left;
+  border-bottom: 1px solid #eeeeeeca;
+}
+
+.education-table th {
+  background: #becbdb19;
+  color: #444;
+  font-weight: 500;
+}
+
+/* ====== Actions ====== */
+.education-actions {
+  white-space: nowrap;
+}
+
+/* ====== Edit Button ====== */
+.education-btn.edit-btn {
+  background-color: #ffeee6;
+  color: #e89e2f;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.education-btn.edit-btn:hover {
+  background-color: #ffe0d1;
+  transform: translateY(-2px);
+}

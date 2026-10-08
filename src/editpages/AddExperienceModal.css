@@ -1,0 +1,104 @@
+/* ===== Overlay ===== */
+.addExperienceModal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.35); /* match experiencefilter subtle bg */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* ===== Modal Box ===== */
+.addExperienceModal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px; /* match experiencefilter card style */
+  width: 500px;
+  max-width: 95%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== Header ===== */
+.addExperienceModal-content h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #444;
+  margin: 0 0 16px 0;
+}
+
+/* ===== Field ===== */
+.addExperienceModal-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.addExperienceModal-field label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151a9;
+}
+
+.addExperienceModal-field input {
+  width: 90%;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.2s ease-in-out, box-shadow 0.2s;
+}
+
+.addExperienceModal-field input:focus {
+  border-color: #ef6b37;
+  box-shadow: 0 0 0 2px rgba(239, 107, 55, 0.2);
+}
+
+/* ===== Footer ===== */
+.addExperienceModal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+/* ===== Buttons (copied from experiencefilter-btn style) ===== */
+.addExperienceModal-cancel-btn,
+.addExperienceModal-save-btn {
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+/* Cancel */
+.addExperienceModal-cancel-btn {
+  background: #f9fafb;
+  color: #374151;
+  border: 1px solid #d1d5db;
+}
+
+.addExperienceModal-cancel-btn:hover {
+  background: #f3f4f6;
+}
+
+/* Save */
+.addExperienceModal-save-btn {
+  background: #ef6b37;
+  color: #fff;
+}
+
+.addExperienceModal-save-btn:hover {
+  background: #d95b28;
+}

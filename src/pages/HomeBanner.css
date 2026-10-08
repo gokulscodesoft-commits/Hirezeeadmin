@@ -1,0 +1,188 @@
+.homebanner-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.homebanner-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* Top Banner Row */
+.homebanner-top-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  margin-bottom: 30px;
+}
+
+.homebanner-card {
+  /* flex: 1; */
+  background: rgba(214, 214, 214, 0.3);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 7px;
+  text-align: center;
+  width: 200px;
+  height: 150px;
+}
+
+.homebanner-card img {
+  width: 200px;
+  height: 100px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.homebanner-card p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #444;
+  margin: 1px;
+}
+
+/* Section */
+.homebanner-rec-seek {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.homebanner-section {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.homebanner-section h2 {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #444;
+}
+
+/* Table */
+.homebanner-table-container {
+  overflow-x: auto;
+  position: relative;
+}
+
+.homebanner-add-btn {
+  background: #ef6b37d7;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 4px 10px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  height: 37px;
+  cursor: pointer;
+  margin-bottom: 8px;
+  transition: background 0.3s ease;
+}
+
+.homebanner-add-btn:hover {
+  background: #d95b28;
+}
+
+.banner-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.homebanner-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.homebanner-table th,
+.homebanner-table td {
+  padding: 20px 33px;
+  color: #7c8c9d;
+  text-align: left;
+  border-bottom: 1px solid #eeeeeeca;
+}
+
+.homebanner-table th {
+  background: #becbdb19;
+  color: #444;
+  font-weight: 500;
+}
+
+/* Banner image inside table */
+.homebanner-img {
+  width: 100px;
+  height: 50px;
+  /* border-radius: 8px; */
+  box-shadow: 0 12px 18px rgba(0, 0, 0, 0.199);
+  padding: 1.4px;
+}
+
+.homebanner-actions {
+  white-space: nowrap;
+}
+
+/* Action buttons */
+.homebanner-btn {
+  padding: 10px 14px;
+  margin: 0 4px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.homebanner-btn:hover {
+  transform: translateY(-2px);
+}
+
+.view-btn {
+  background-color: #e6f0ff;
+  color: #3d6dff;
+  font-size: large;
+}
+
+.homebanner-btn.edit-btn {
+  background-color: #ffeee6;
+  color: #e89e2f;
+}
+
+.delete-btn {
+  background-color: #ffeee6;
+  color: #df4646;
+}
+
+.view-btn:hover {
+  background-color: #c4ddfe;
+}
+
+.homebanner-btn.edit-btn:hover {
+  background-color: #ffe0d1;
+}
+
+.delete-btn:hover {
+  background-color: #ffd9c8;
+}
+
+.viewed-row {
+  background-color: rgba(0, 0, 0, 0.05); /* light faded effect */
+  opacity: 0.7; /* slightly transparent */
+  transition: all 0.3s ease;
+}
+
+.viewed-row td {
+  transition: all 0.3s ease;
+}
+
+/*-------------------Jerin code -----------------*/
+.homebanner-rec-seek .homebanner-section .banner-button .seeker-text {
+  color: #ef6b37d7;
+  font-weight: 600;
+}

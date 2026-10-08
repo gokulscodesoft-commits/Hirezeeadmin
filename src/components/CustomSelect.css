@@ -1,0 +1,119 @@
+.custom-select-container {
+  position: relative;
+  width: 100%;
+}
+
+.custom-select-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 11px 14px;
+  border: 1.5px solid #d1d5db;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 14px;
+  color: #374151;
+}
+
+.custom-select-trigger:hover {
+  border-color: #9ca3af;
+  background-color: #f9fafb;
+}
+
+.custom-select-trigger.open {
+  border-color: #ef6b37;
+  box-shadow: 0 0 0 3px rgba(239, 107, 55, 0.1);
+}
+
+.custom-select-trigger .placeholder {
+  color: #9ca3af;
+}
+
+.custom-select-arrow {
+  width: 16px;
+  height: 16px;
+  color: #6b7280;
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+}
+
+.custom-select-arrow.open {
+  transform: rotate(180deg);
+}
+
+.custom-select-dropdown {
+  background: #fff;
+  border: 1.5px solid #d1d5db;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.custom-select-search {
+  width: 100%;
+  padding: 10px 12px;
+  border: none;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 14px;
+  outline: none;
+  background: #f9fafb;
+}
+
+.custom-select-search:focus {
+  background: #fff;
+  border-bottom-color: #ef6b37;
+}
+
+.custom-select-options {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.custom-select-option {
+  padding: 11px 14px;
+  font-size: 14px;
+  color: #374151;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.custom-select-option:hover {
+  background: #f3f4f6;
+  color: #1f2937;
+}
+
+.custom-select-option.selected {
+  background: #fef3c7;
+  color: #b45309;
+  font-weight: 500;
+  border-left: 3px solid #ef6b37;
+  padding-left: 11px;
+}
+
+.custom-select-no-results {
+  padding: 16px 14px;
+  text-align: center;
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+/* Scrollbar styling */
+.custom-select-options::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-select-options::-webkit-scrollbar-track {
+  background: #f3f4f6;
+}
+
+.custom-select-options::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 3px;
+}
+
+.custom-select-options::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}

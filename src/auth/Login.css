@@ -1,0 +1,142 @@
+/* ====== Page Layout ====== */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f8f5f5;
+  font-family: "Poppins", sans-serif;
+}
+
+.greet-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.login-logo {
+  margin-bottom: 15px;
+  width: 120px;
+  height: auto;
+}
+
+/* ====== Card ====== */
+.login-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  text-align: center;
+}
+
+.login-title-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login1 {
+  margin: 0;
+  color: #333333ce;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.login2 {
+  margin: 10px 0 20px 0;
+  color: #1e1e1e80;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+/* ====== Form ====== */
+.login-form .form-group {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 0.6rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Base input style */
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.3s;
+  box-sizing: border-box;
+}
+
+.login-form input:focus {
+  border-color: #ff750c;
+}
+
+/* ====== Input with Icon ====== */
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* Icon inside input */
+.input-icon {
+  position: absolute;
+  left: 12px;
+  color: #666;
+  font-size: 16px;
+  pointer-events: none;
+}
+
+/* Add padding-left to make room for the icon */
+.login-form .input-wrapper input {
+  padding-left: 40px;
+}
+
+/* ====== Eye Icon (Show/Hide Password) ====== */
+.eye-icon {
+  position: absolute;
+  right: 12px;
+  color: #666;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s;
+}
+
+.eye-icon:hover {
+  color: #ff750c;
+}
+
+/* ====== Submit Button ====== */
+.login-btn {
+  width: 100%;
+  padding: 0.7rem;
+  background: #ff750c;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 1.2rem;
+}
+
+.login-btn:hover {
+  background: #ff7104;
+}
+
+.login-btn:disabled {
+  background: #f1a96a;
+  cursor: not-allowed;
+}
